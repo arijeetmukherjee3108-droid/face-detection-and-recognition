@@ -72,6 +72,19 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
+### 4. Download Pre-trained Models
+
+Because model weights are large, they are not included in this repository. To run the pipeline out of the box, you will need the trained YOLO weights:
+
+1. Download the `best.pt` model weights from: **[Insert your Google Drive link here]**
+2. Place the downloaded file directly inside the `models/yolo/` directory:
+   ```text
+   face-detection-and-recognition/
+   └── models/
+       └── yolo/
+           └── best.pt
+   ```
+
 ---
 
 ## 🧪 Testing Procedures
