@@ -1,4 +1,4 @@
-﻿# Python
+# Python
 __pycache__/
 *.py[cod]
 *.pyo
@@ -18,14 +18,15 @@ env/
 .ipynb_checkpoints/
 
 # Model weights (large files)
-models/weights/*.pt
-models/weights/*.pth
-models/weights/*.h5
-models/weights/*.onnx
+*.pt
+*.pth
+*.h5
+*.onnx
+models/
 
-# Data (raw data stays local)
-data/raw/
-data/processed/
+# Data (large datasets)
+data/
+runs/
 
 # Outputs
 outputs/logs/

@@ -1,0 +1,34 @@
+# STAGE 1 — Face Detection Settings (MTCNN — used for crop extraction)
+detection:
+  min_face_size: 40        
+  threshold: [0.6, 0.7, 0.8]
+  image_size: 160          
+
+# STAGE 1 — YOLOv8 Face Detector (trained on your dataset)
+yolo_detector:
+  weights: "models/yolo/best.pt"     # set after training
+  pretrained: "yolov8n.pt"           # fallback if best.pt not found
+  conf_threshold: 0.5
+  iou_threshold: 0.45
+  img_size: 640
+  dataset_yaml: "configs/yolo_dataset.yaml"
+
+# STAGE 2 — Mask Classification Settings  
+classification:
+  model_path: "models/weights/mask_classifier.pth"
+  confidence_threshold: 0.85   
+  classes: ["masked", "unmasked"]
+
+# STAGE 3 — Face Recognition Settings
+recognition:
+  model_path: "models/weights/facenet.pth"
+  embedding_size: 512      
+  similarity_threshold: 0.7
+
+# General Paths
+paths:
+  raw_data: "data/raw/"
+  processed_data: "data/processed/"
+  annotations: "data/annotations/"
+  outputs: "outputs/results/"
+  logs: "outputs/logs/"

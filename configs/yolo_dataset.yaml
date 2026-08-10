@@ -1,0 +1,14 @@
+# YOLOv8 Dataset Config — Face Detection
+# This file tells YOLOv8 where to find images and labels
+
+path: D:/face-ai-pipeline/data/raw/face-detection-dataset   # root dataset dir
+
+train: images/train   # relative to 'path'
+val:   images/val     # relative to 'path'
+
+# Number of classes
+nc: 1
+
+# Class names
+names:
+  0: face
