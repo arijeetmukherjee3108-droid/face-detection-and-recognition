@@ -76,7 +76,7 @@ pip install -r requirements.txt
 
 Because model weights are large, they are not included in this repository. To run the pipeline out of the box, you will need the trained YOLO weights:
 
-1. Download the `best.pt` model weights from: **[Insert your Google Drive link here]**
+1. Download the `best.pt` model weights from: https://drive.google.com/file/d/1EgFwJTDEgdG4_WDC8it0foImDtsnKiaK/view?usp=sharing
 2. Place the downloaded file directly inside the `models/yolo/` directory:
    ```text
    face-detection-and-recognition/
@@ -149,6 +149,9 @@ To test the complete end-to-end integration (Detection -> Mask Classification ->
 
 **Arijeet Mukherjee**
 *   GitHub: [@arijeetmukherjee3108-droid](https://github.com/arijeetmukherjee3108-droid)
+
+**Navay Agarwal**
+*   GitHub: [navayagrawal369](https://github.com/navayagrawal369)
 
 ---
 
